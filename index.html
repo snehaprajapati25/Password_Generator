@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <div class="banner">Password Generator</div>
+        <div class="content">
+            <!-- Password Display -->
+            <div class="password-box">
+                <input type="text" id="password" placeholder="Click Generate" readonly>
+                <span id="copy">📋</span>
+            </div>
+
+            <div class="length">
+                <label>Length <span id="length-value">10</span></label>
+            </div>
+
+            <div class="range-box">
+                <span>4</span>
+                <input type="range" min="4" max="32" value="10" id="slider">
+                <span>32</span>
+            </div>
+
+            <p id="setting">SETTINGS</p>
+
+            <div class="options">
+                <span>Include Uppercase</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="upper">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+
+            <div class="options">
+                <span>Include Lowercase</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="lower">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+
+            <div class="options">
+                <span>Include Numbers</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="number">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+
+            <div class="options">
+                <span>Include Symbols</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="symbols">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+
+            <button id="generate">GENERATE PASSWORD</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
